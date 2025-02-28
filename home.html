@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jerry's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js"></script>
+</head>
+
+<body id=page1>
+
+    <div id="header-nav"></div>
+
+    <div class="container" id="about">
+        <!-- 左侧照片 -->
+        <div class="about-image">
+            <img src="home.png" class="project1-image">
+        </div>
+
+        <!-- 右侧文本内容 -->
+        <div class="about-text">
+            <h1>Welcome to my portfolio!</h1>
+            <p>I'm Jerry (Fenghao) Zuo, a game designer passionate at combat design and enemy design.</p>
+
+            <div class="experience">
+                <h2>GATECH DIGITAL MEDIA MASTERS STUDENT</h2>
+                <h3>Aug 2023 - Present</h3>
+                <h3>Graduate in May 2025</h3>
+            </div>
+            <a href="boardgame.html" target="_blank" class="project-button">See my work!</a>
+
+
+            <!-- <div class="experience">
+                <h2>NETEASE THUNDERFIRE</h2>
+                <h3>July 2024 - Dec 2024</h3>
+                <h3>Level Designer, JUSTICE online</h3>
+            </div>
+
+            <div class="experience">
+                <h2>CMGE</h2>
+                <h3>Apr 2024 - Jul 2024</h3>
+                <h3>Combat Designer, Sword and Fairy</h3>
+            </div>
+
+            <div class="experience">
+                <h2>TENCENT</h2>
+                <h3>Jun 2021 - Sep 2021</h3>
+                <h3>User Growth Operation, Maple Story</h3>
+            </div> -->
+        </div>
+    </div>
+
+
+
+
+    <!-- <div class="project1" id="project1">
+        <iframe src="https://drive.google.com/file/d/1kwbezDXxmgzAcc7l5TyUFjqMLVCwg3hg/preview" frameborder="0"
+            width="960" height="720" allowfullscreen="true"
+            sandbox="allow-same-origin allow-scripts allow-pointer-lock allow-forms allow-popups allow-popups-to-escape-sandbox"></iframe>
+        <div class="content">
+            <h2>Lie Flat!</h2>
+            <p>"Lie Flat!" is my first independent work. It is a board game designed to discuss working status and
+                mental stress of recent graduates in China. </p>
+            <p>The core experiences of the game are the dual resource conversion and special event prediction.</p>
+            <a href="https://youtu.be/BMxwyK5IYsU?si=OjxeqwO8wIw3xOFR">See more instruction on:</a>
+        </div>
+    </div>
+
+    <div class="project2-content-wrapper" id="project2">
+        <div class="project2-images">
+            <img src="housetilepets.png" alt="House-tile Pets1" class="project-image">
+            <img src="housetilepets2.png" alt="House-tile Pets2" class="project-image">
+        </div>
+        <div class="content">
+            <h2>House-tile Pets</h2>
+            <p>"House-tile Pets" is my 2024 Gamejam work. This is a 2D shooting game developed in Unity for two players.
+                Players act
+                as cat or dog, fight to be the king of the house.</p>
+            <p>In this project, I served as the lead designer and lead programmer, proposing the overall game framework
+                while also
+                implementing the player control system and the logic for bullets hitting and destroying obstacles.</p>
+            <a href="https://jerryzip.itch.io/house-tile-pets" target="_blank" class="project-button">Play Online</a>
+        </div>
+    </div>
+    </div>
+
+    <div class="project3" id="project3">
+        <div class="project2-images">
+            <img src="xianjian1.png" alt="Project 3" class="project-image">
+            <img src="xianjian2.png" alt="Project 3" class="project-image">
+        </div>
+        <div class="content">
+            <h2>Toughness system</h2>
+            <h3>in Sword and Fairy</h3>
+            <p>Designed a toughness system to handle hit reactions and attack priorities for "Sword and Fairy: Far
+                Beyond Time", an ARPG with more than 1m subscriptions.</p>
+            <p>Previously, the hit reactions in the game were triggered by fixed logic. As development
+                progressed, there was an additional need to display the effects of attacks in the hit animations,
+                necessitating a
+                conditional assessment to determine which type of hit animation to play.</p>
+            <p>I designed a dual-thread resilience display system, assigning values to each attack action and character
+                hit resilience.
+                When an attack is placed, the system plays the corresponding hit reaction based on the difference
+                between the two values. This system boasts strong standardization and scalability, significantly
+                simplifying processes
+                and optimizing performance.</p>
+            <a href="#">View the Game on Steam</a>
+        </div>
+    </div>
+
+    <div class="project4" id="project4">
+        <div class="project4-videos">
+            <video class="project-video" controls>
+                <source src="nsh1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <video class="project-video" controls>
+                <source src="nsh2.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="content">
+            <h2>Xueya, the Blood Emissary</h2>
+            <p>Designed Xueya, the final boss in the 2024.12 Patch for "JUSTICE ONLINE", the largest MMO in China.</p>
+            <p>As the final boss of the raid, Xueya needs to be highlighted as a formidable opponent in the battle,
+                while
+                also balancing the needs of the narrative and the combat experience.</p>
+            <p>For this purpose, I designed "Blade Spirits" as the core of the combat mechanics. Xueya summons different
+                Blade
+                Spirits in each phase of the fight, each with a unique style, providing a series of distinct combat
+                experiences that are
+                interconnected through his real body. Narratively, the Blade Spirits represent aspects of Xueya's psyche
+                and are
+                given independent thoughts in their design, which facilitates creative development by the writing team.
+            </p>
+            <p>Additionally, for the first time, I integrated auditory elements as a combat element in "JUSTICE Online",
+                creating a mechanism for
+                identifying positions by sound. Xueya received widespread acclaim from players, focusing on the
+                mechanics being
+                interesting and the difficulty level being reasonable.</p>
+            <a href="#">Learn More</a>
+        </div>
+    </div> -->
+
+    <div id="footer"></div>
+</body>
+
+</html>

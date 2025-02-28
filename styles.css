@@ -1,0 +1,491 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lato:wght@400;700&family=Roboto:wght@400;700&family=Poppins:wght@400;700&family=Montserrat:wght@400;700&family=Playfair+Display:wght@400;700&family=Bebas+Neue&family=Oswald:wght@400;700&display=swap');
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+    /* 纯黑色背景 */
+    color: #ffffff;
+    /* 让文字变成白色，保证可读性 */
+    display: flex;
+    flex-direction: column;
+    scroll-behavior: smooth;
+}
+
+#page1 {
+    background: linear-gradient(to bottom, #000000, #1b316f);
+    color: white;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+#page3 {
+    background: linear-gradient(to bottom, #000000, #203a83);
+    color: white;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+#page4 {
+    background: linear-gradient(to right, #000000, #1b2e1b);
+    color: white;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+#page5 {
+    background: linear-gradient(to bottom,
+            #000000 0%,
+            #678089 50%,
+            #1c376c 100%);
+    color: white;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.top-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background-color: #1d1c1c;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    z-index: 1001;
+}
+
+.name {
+    font-size: 30px;
+    font-weight: bold;
+    font-family: "Oswald", sans-serif;
+}
+
+.jerry {
+    color: orange;
+}
+
+.zuo {
+    color: white;
+}
+
+/* 联系方式的样式 */
+.contact-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* 邮箱样式 */
+.email-link {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    transition: color 0.3s ease;
+    /* margin-right: 40px; */
+}
+
+.linkedin-button {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    background-image: url('LinkedIn_icon.svg.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    transition: opacity 0.3s ease;
+    margin-right: 60px;
+}
+
+nav {
+    background-color: #000000;
+    position: fixed;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-around;
+    /* 让菜单项按距离平分 */
+    align-items: center;
+    padding: 0 20px;
+    z-index: 1000;
+}
+
+nav a {
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 15px 20px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #262626;
+    color: #ffa200;
+    border-radius: 5px;
+}
+
+
+.container {
+    display: flex;
+    align-items: stretch;
+    /* 让左右两部分同高 */
+    /* max-width: 1200px; */
+    margin: auto;
+    padding: 40px;
+    height: 100vh;
+    /* 让整个区域占满视口高度 */
+}
+
+.about-image {
+    flex: 1;
+    overflow: hidden;
+}
+
+.project1-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    margin-top: 20px;
+}
+
+.about-text {
+    flex: 2;
+    padding: 0 40px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    margin-top: 150px;
+}
+
+/* 经验部分的间距 */
+.experience {
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+/* 标题优化 */
+.about-text h1 {
+    font-size: 62px;
+    color: #ffa724;
+    margin-bottom: 15px;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+}
+
+.about-text p {
+    font-size: 32px;
+    color: #ffffff;
+    margin-bottom: 15px;
+    text-align: center;
+    font-family: "Lato", sans-serif;
+}
+
+.about-text h2 {
+    font-size: 29px;
+    color: #ffa724;
+    margin-bottom: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+.about-text h3 {
+    font-size: 22px;
+    color: #ffffff;
+    margin-bottom: 10px;
+    font-family: "Montserrat", sans-serif;
+}
+
+
+.project1 {
+    padding: 20px 20px 20px;
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 100px;
+    box-sizing: border-box;
+}
+
+.project1 iframe {
+    display: block;
+    max-width: 90%;
+    height: 480px;
+    border: none;
+    margin: 20px auto;
+    /* 上下 20px 间距，左右自动居中 */
+}
+
+.project1 h2 {
+    color: #ff9500;
+    font-size: 62px;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 0;
+}
+
+.project1 p {
+    margin-bottom: 10px;
+    margin-right: 50px;
+    font-size: 25px;
+    text-align: center;
+    font-family: "Lato", sans-serif;
+}
+
+.project1 a {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 28px;
+    font-weight: bold;
+    color: #ffb114;
+    text-decoration: none;
+    text-align: center;
+}
+
+.ig {
+    padding: 40px 20px;
+    margin: auto;
+    margin-top: 160px;
+    box-sizing: border-box;
+}
+
+/* 左右分栏布局 */
+.project2-content-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+
+}
+
+.project2-images {
+    display: flex;
+    flex-direction: column;
+    /* gap: 10px; */
+    /* 图片间距 */
+    width: 55%;
+    align-items: center;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.project-image {
+    width: 90%;
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+    padding-left: 5px;
+}
+
+.content h2 {
+    color: #ffb219;
+    margin-bottom: 10px;
+    font-size: 52px;
+    text-align: center;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+.content h3 {
+    color: #ffffff;
+    margin-bottom: 1px;
+    font-size: 35px;
+    text-align: center;
+}
+
+.content h4 {
+    color: #ffffff;
+    margin-bottom: 10px;
+    font-size: 52px;
+    text-align: center;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+.content p {
+    color: #ffffff;
+    margin-bottom: 10px;
+    margin-right: 50px;
+    font-size: 22px;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+}
+
+.project3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 80%;
+    margin: 150px auto;
+}
+
+.project3 h2 {
+    color: #ff9500;
+    font-size: 52px;
+    margin-bottom: 2px;
+    font-family: "Poppins", sans-serif;
+}
+
+.project3 h3 {
+    color: #ff9500;
+    font-size: 42px;
+    margin-top: 2px;
+    margin-bottom: 5px;
+    font-family: "Poppins", sans-serif;
+}
+
+.project3 p {
+    font-size: 25px;
+    margin: 20px 100px;
+    font-family: "Lato", sans-serif;
+}
+
+/* 图片居中 */
+.project3-image {
+    display: block;
+    max-width: 70%;
+    height: auto;
+    margin: 15px auto;
+    /* 上下间距 + 居中 */
+}
+
+/* 按钮样式 */
+.project3 a {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    background-color: rgb(254, 182, 12);
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.project3 a:hover {
+    background-color: #ffc400;
+}
+
+.project-button {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    background-color: rgb(254, 182, 12);
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+    align-self: center;
+    /* 让按钮左对齐 */
+}
+
+.project-button:hover {
+    background-color: #ff9100;
+}
+
+.project4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 80%;
+    margin: 100px auto;
+    margin-top: 150px;
+}
+
+.project-video {
+    width: 70%;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.project4 h2 {
+    color: #ff9100;
+    font-size: 50px;
+    margin-bottom: 10px;
+    font-family: "Poppins", sans-serif;
+}
+
+.project4 p {
+    font-size: 25px;
+    margin: 30px 100px;
+}
+
+.project img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.project h2 {
+    margin: 15px 0 10px;
+}
+
+.project p {
+    color: #ffffff;
+}
+
+.p5image {
+    display: flex;
+    /* 使用 Flexbox */
+    justify-content: center;
+    /* 图片均匀分布 */
+    align-items: center;
+    /* 垂直居中 */
+    gap: 10px;
+    /* 控制图片间距 */
+    margin-top: 20px;
+    max-width: 80%;
+}
+
+.p5image img {
+    width: 32%;
+    aspect-ratio: 3 / 3;
+    height: auto;
+    /* 保持原始比例 */
+    border-radius: 8px;
+    /* 可选，圆角 */
+}
+
+@media (max-width: 768px) {
+    .p5image {
+        flex-direction: column;
+        /* 让图片在小屏幕上纵向排列 */
+        align-items: center;
+        /* 居中对齐 */
+    }
+
+    .p5image img {
+        width: 80%;
+        /* 小屏幕时图片变大一些 */
+    }
+}
+
+footer {
+    background-color: #1d1c1c;
+    color: white;
+    text-align: center;
+    align-items: center;
+    font-size: 20px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    height: 50px;
+}

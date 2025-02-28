@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CMGE</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js"></script>
+</head>
+
+<body id=page4>
+
+    <div id="header-nav"></div>
+
+    <div class="project3" id="project3">
+        <h2>Toughness system</h2>
+        <h3>in <i>"Sword and Fairy"</i></h3>
+        <p>Designed a toughness system to handle hit reactions and attack priorities for <i>"Sword and Fairy: Far Beyond
+                Time"</i>, an ARPG with more than 1m subscriptions.</p>
+        <img src="xianjian1.png" alt="Project 3" class="project3-image">
+        <p>Previously, the hit reactions in the game were triggered by fixed logic. As development
+            progressed, there was an additional need to display different types of effects by the hit animations,
+            necessitating a
+            conditional assessment to determine which type of hit animation to play.</p>
+        <p>To solve this problem, I designed a dual-thread resilience display system, assigning values to each attack
+            action and character hit
+            resilience.
+            When an attack is placed, the engine plays the corresponding hit reaction calculated from
+            two values. This system boasts strong standardization and scalability, significantly simplifying
+            processes
+            and optimizing performance.</p>
+        <a href="#">View the Game</a>
+    </div>
+
+    <div id="footer"></div>
+
+</body>
+
+</html>
